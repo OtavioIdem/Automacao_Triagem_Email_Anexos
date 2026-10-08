@@ -1,0 +1,24 @@
+{
+  "dry_run": true,
+  "download_dir": "downloads",
+  "allowed_extensions": [".pdf", ".xml", ".xlsx"],
+  "imap": {
+    "host": "imap.exemplo.com",
+    "username_env": "MAIL_USERNAME",
+    "password_env": "MAIL_PASSWORD",
+    "folder": "INBOX",
+    "from_contains": "fornecedor@exemplo.com",
+    "subject_contains": "Nota Fiscal"
+  },
+  "reply": {
+    "enabled": false,
+    "message": "Recebemos seu documento e ele sera processado.",
+    "smtp": {
+      "host": "smtp.exemplo.com",
+      "port": 587,
+      "username_env": "MAIL_USERNAME",
+      "password_env": "MAIL_PASSWORD",
+      "from": "processamento@exemplo.com"
+    }
+  }
+}
